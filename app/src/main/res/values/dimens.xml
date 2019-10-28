@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="small_padding_top">45dp</dimen>
+    <dimen name="padding_start">16dp</dimen>
+    <dimen name="padding_left">37dp</dimen>
+    <dimen name="small_padding_bottom">45dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="small_screen_img_height">270dp</dimen>
+</resources>

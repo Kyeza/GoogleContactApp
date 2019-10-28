@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DisplayContactActivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/small_screen_img_height"
+        app:srcCompat="@drawable/ic_profile"
+        android:tint="@color/colorDarkGray"
+        android:padding="25dp"
+        android:background="@color/colorLightGray" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_full_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Headline5"
+                android:padding="12dp"
+                android:textColor="@color/colorDarkGray"
+                android:textAlignment="textStart"
+                android:gravity="start" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_below="@+id/tv_full_name"
+                android:id="@+id/rv_action_btns"
+                android:layout_width="match_parent"
+                android:layout_height="80dp" />
+
+            <LinearLayout
+                android:layout_below="@+id/rv_action_btns"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="0dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="20dp"
+                    android:orientation="horizontal"
+                    android:gravity="bottom">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="16dp"
+                        android:tint="@color/colorDarkGray"
+                        android:layout_marginRight="0dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        app:srcCompat="@drawable/ic_phone" />
+
+                    <TextView
+                        android:id="@+id/tv_phone"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                        android:textColor="@color/colorDarkGray"
+                        android:fontFamily="@font/productsans_regular"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="0dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="20dp"
+                    android:orientation="horizontal"
+                    android:gravity="bottom">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="16dp"
+                        android:tint="@color/colorDarkGray"
+                        android:layout_marginRight="0dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        app:srcCompat="@drawable/ic_email" />
+
+                    <TextView
+                        android:id="@+id/tv_email"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                        android:textColor="@color/colorDarkGray"
+                        android:fontFamily="@font/productsans_regular"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="0dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="20dp"
+                    android:orientation="horizontal"
+                    android:gravity="bottom">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="16dp"
+                        android:tint="@color/colorDarkGray"
+                        android:layout_marginRight="0dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        app:srcCompat="@drawable/ic_address" />
+
+                    <TextView
+                        android:id="@+id/tv_address"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                        android:textColor="@color/colorDarkGray"
+                        android:fontFamily="@font/productsans_regular"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="0dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="20dp"
+                    android:orientation="horizontal"
+                    android:gravity="bottom">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginEnd="16dp"
+                        android:tint="@color/colorDarkGray"
+                        android:layout_marginRight="0dp"
+                        android:layout_gravity="center_vertical|center_horizontal"
+                        app:srcCompat="@drawable/ic_website" />
+
+                    <TextView
+                        android:id="@+id/tv_website"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textSize="18sp"
+                        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline6"
+                        android:textColor="@color/colorDarkGray"
+                        android:fontFamily="@font/productsans_regular"
+                        android:layout_weight="1" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

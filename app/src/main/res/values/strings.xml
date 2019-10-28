@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Edit contact</string>
+    <string name="first_name_hint">First name</string>
+    <string name="last_name_hint">Last name</string>
+    <string name="phone_hint">Phone</string>
+    <string name="email_hint">Email</string>
+    <string name="address_hint">Address</string>
+    <string name="website_hint">Website</string>
+    <string name="save_button_label">save contact</string>
+    <string name="call_button_label">Call</string>
+    <string name="text_button_label">Text</string>
+    <string name="email_button_label">Email</string>
+    <string name="directions_button_label">Map</string>
+    <string name="web_button_label">Web</string>
+</resources>
